@@ -85,7 +85,7 @@ public class BaseRobot implements Robot {
 	}
 	
 	public void recharge() {
-		this.batteryLevel += 100;
+		this.batteryLevel += 25;
 		this.normaliseBattery();
 	}
 	
