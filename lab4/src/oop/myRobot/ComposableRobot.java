@@ -30,6 +30,7 @@ public class ComposableRobot extends BaseRobot{
 	}
 	
 	private Component searchComponent(Object tmp) {
+		/* devo migliorare per far sì ch ein realtà mi restituisca l'insieme i tutti i componenti di quel tipo*/
 		int i = 0;
 		while (i <this.robotComponents.length) {
 			if(this.robotComponents[i].getClass() != tmp.getClass()) {
@@ -38,6 +39,8 @@ public class ComposableRobot extends BaseRobot{
 		}
 		return null;
 	}
+	
+	
 	
 	
 	/*forse potrebb essere utile far si che alcuni componenti possano 

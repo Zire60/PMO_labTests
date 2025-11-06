@@ -7,7 +7,7 @@ public class AtomicBattery extends Component{
 	}
 	
 	public void fullRecharge() {
-		if (this.mainFrame != null && this.mainFrame.getBatteryLevel() < 50) {
+		if (this.isOn && this.mainFrame != null && this.mainFrame.getBatteryLevel() < 50) {
 			for(int i = 0; i < 4; i++)
 				this.mainFrame.recharge();
 		}
